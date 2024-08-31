@@ -157,6 +157,13 @@ footer {
     }
 }
 
+@media (max-width: 600px) {
+    .footer__link {
+        font-size: 12px;
+    }
+}
+
+
 @media (max-width: 570px) {
     header {
         justify-content: center;
@@ -180,5 +187,9 @@ footer {
 
     .subscribe__form input {
         max-width: 38%;
+    }
+
+    .footer__link {
+        font-size: 10px;
     }
 }
