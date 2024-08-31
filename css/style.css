@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 16px;
+    background: #272727;
+    font-family: 'Comfortaa', cursive;
+}
+
+h1, p, h2 {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.5s;
+}
+
+.subscribe {
+    background-color: #80A6FF;
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.subscribe__text span {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.subscribe__form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.subscribe__form input {
+    border: none;
+    font: inherit;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.subscribe__form input:focus,
+.subscribe__form input:active {
+    border: none;
+    outline: none;
+}
+
+.push {
+    border: none;
+    outline: none;
+    padding: 2px 10px;
+    background: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.push:hover {
+    color: #80A6FF;
+}
+
+
+header {
+    padding: 3% 2%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+
+.nav-list {
+    display: flex;
+    gap: 20px;
+}
+
+.menu {
+    display: inline-block;
+}
+
+.menu:hover {
+    color: #80A6FF;
+}
+
+
+.line {
+    width: 60%;
+    margin: 0 auto;
+    height: 2px;
+    background: #80A6FF;
+    margin-bottom: 5%;
+}
+
+.articles {
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+
+.card {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.card__img {
+    width: 100%;
+}
+
+.card__text {
+    padding: 3%;
+    background: #80A6FF;
+}
+
+footer {
+    padding: 3% 5%;
+    background: #484F5F;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 950px) {
+    .card {
+        width: 40%;
+    }
+}
+
+
+@media (max-width: 750px) {
+    .subscribe {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .header__logo {
+        width: 200px;
+    }
+
+    .card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 570px) {
+    header {
+        justify-content: center;
+    }
+
+    .header__logo {
+        display: none;
+    }
+}
+
+@media (max-width: 470px) {
+    .articles {
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .subscribe__form input {
+        max-width: 38%;
+    }
+}
